@@ -1,0 +1,8 @@
+<h1> hello world </h1>
+
+<%= form_with model: @student  do |form| %>
+    <%= form.text_field :first_name %>
+    <%= form.text_field :second_name %>
+    <%= form.search_field :course %>
+    <%= form.submit %>
+<% end %>

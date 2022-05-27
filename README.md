@@ -1,26 +1,24 @@
 # README
+ ![Students ERD](./assets/students.svg)
+#### Figure 1: Students ERD.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Steps in building a rails app.
+* routes
 
-Things you may want to cover:
+|verb| action           |
+| :---: |:-----------------|
+|GET| students#index   |
+|GET| students#show    |
+|GET| students#new     |
+|POST| students#create  |
+|GET| students#edit    |
+|PUT| students#update  |
+|PATCH| students#update |
+|DELETE| students#destroy |
 
-* Ruby version
+* controller
+* view
+* model
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 # rails_model
 # rails_model

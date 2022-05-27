@@ -1,0 +1,24 @@
+<h1> hello world </h1>
+
+<%= form_with model: @student  do |form| %>
+    <%= form.text_field :first_name, placeholder:"First Name"%>
+    <%= form.text_field :second_name, placeholder:"Second Name"%>
+    <input list="browsers" name="student[course_name]">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+    <% @courses.each do |element|%>
+       
+    <option value= "<%= element.name %>" >
+    <% end %>    
+  </datalist>
+    <%= form.submit %>
+<% end %>
+
+
+<%= console %>
+
+
