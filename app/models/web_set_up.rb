@@ -1,0 +1,2 @@
+class WebSetUp < ApplicationRecord
+end

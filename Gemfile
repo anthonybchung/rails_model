@@ -72,3 +72,5 @@ group :test do
 end
 
 gem 'chosen-rails', '~> 1.5', '>= 1.5.2'
+
+gem 'devise', '~> 4.8', '>= 4.8.1'

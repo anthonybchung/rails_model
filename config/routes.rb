@@ -1,10 +1,14 @@
 Rails.application.routes.draw do
+  devise_for :users
+  get '/landing/', to: 'landing#index'
+
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   resources :students
   # Defines the root path route ("/")
   # root "articles#index"
   # get '/students/', to: 'students#index'
-  
+  root to: "student#index"
 
   # #create new students
  

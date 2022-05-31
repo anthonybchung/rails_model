@@ -11,22 +11,7 @@ class StudentsController < ApplicationController
 
   def create
     student = Student.new
-    
-    if !Course.exists? name: student_params[:course_name]
-      Course.create(name: student_params[:course_name])
-    end
-
-p "**************************************"
-    p student_params[:first_name]
-    p 
-    p "***********************************************"
-    course_id = Course.find_by(name: student_params[:course_name])
-    student.first_name = student_params[:first_name]
-    student.second_name = student_params[:second_name]
-    student.course = course_id
-    student.save
-    
-
+    student.new_student(student_params);
     redirect_to students_path   
   end
 

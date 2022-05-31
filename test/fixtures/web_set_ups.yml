@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  web_setup_name: MyString
+  seup_value: MyString
+
+two:
+  web_setup_name: MyString
+  seup_value: MyString
